@@ -1,14 +1,14 @@
 
-exports.getLocalization = function() {
+exports.getLocalization = function(locale) {
 
 var PropertiesReader = require('properties-reader');
 
 var fs = require("fs");
 var dir = require('node-dir');
 var _ = require('underscore');  
-
+console.log(locale);
     var output = "";
-    var directory = "locale/"+this.locale+"/";
+    var directory = "locale/"+locale+"/";
 
         dir.files(directory, function(err,files) {
             _.each(files,function(file) {
