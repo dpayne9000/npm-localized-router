@@ -1,0 +1,29 @@
+{
+  "name": "@haven/localized-router",
+  "version": "0.1.0",
+  "description": "A module for parsing localization files into front end changes via the router",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://dpayne0220@bitbucket.org/haven_agency/npm-localized-router.git"
+  },
+  "keywords": [
+    "localization",
+    "router"
+  ],
+  "devDependencies": {
+    "body-parser": "^1.9.0",
+    "chai": "^1.9.1",
+    "express": "^4.9.4",
+    "mocha": "^1.21.4",
+    "request": "^2.44.0",
+    "properties-reader": "^0.0.15",
+    "node-dir": "^0.1.11"    
+  },  
+  "author": "Daniel Payne <daniel@havenagency.com>",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/haven_agency/npm-localized-router#readme"
+}
