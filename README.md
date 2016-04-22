@@ -18,6 +18,10 @@ Then put the code in your express router like this:
     });
     
     
+Include it in the ejs view like this:
+
+    <%= locale._properties["project-name.page.title"] %>
+    
 Express is required but won't be in future versions.
 
 Thanks for using!

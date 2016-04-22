@@ -6,7 +6,12 @@ var PropertiesReader = require('properties-reader');
 var fs = require("fs");
 var dir = require('node-dir');
 var _ = require('underscore');  
-console.log(locale);
+//console.log(locale);
+
+    if (typeof locale == 'undefined') {
+    locale = exports.config.defaultLocale;
+    }
+    
     var output = "";
     var directory = "locale/"+locale+"/";
 
@@ -19,7 +24,11 @@ console.log(locale);
                         console.log('file '+file+' skipped');
                         return;
                         }
-                exports.output = PropertiesReader(file);
+                        try {
+                            exports.output = PropertiesReader(file);
+                        } catch (err) {
+                           console.log(err);
+                        }
                 
             });
         });
