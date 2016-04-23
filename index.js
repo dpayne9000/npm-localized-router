@@ -9,7 +9,7 @@ var _ = require('underscore');
 //console.log(locale);
 
     if (typeof locale == 'undefined') {
-    locale = exports.config.defaultLocale;
+        locale = exports.config.defaultLocale;
     }
     
     var output = "";
