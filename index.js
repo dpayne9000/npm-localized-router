@@ -13,7 +13,7 @@ var _ = require('underscore');
     }
     
     var output = "";
-    var directory = "locale/"+locale+"/";
+    var directory = "/locale/"+locale+"/";
 
         dir.files(directory, function(err,files) {
             _.each(files,function(file) {
