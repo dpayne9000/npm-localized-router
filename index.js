@@ -5,19 +5,20 @@ var PropertiesReader = require('properties-reader');
 
 var fs = require("fs");
 var dir = require('node-dir');
-var _ = require('underscore');  
+var _ = require('underscore');
 //console.log(locale);
 
     if (typeof locale == 'undefined') {
-        locale = exports.config.defaultLocale;
+        locale = 'en-us';//exports.config.defaultLocale;
     }
-    
+
     var output = "";
     var directory = "locale/"+locale+"/";
-
+console.log(directory);
         dir.files(directory, function(err,files) {
+        if (err) console.log(err);
             _.each(files,function(file) {
-            console.log(file);
+            console.log(file +' file loaded');
                         var ext = file.search('.properties');
 
                         if (ext==-1) {
@@ -29,7 +30,7 @@ var _ = require('underscore');
                         } catch (err) {
                            console.log(err);
                         }
-                
+
             });
         });
 
