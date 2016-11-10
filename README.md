@@ -4,7 +4,7 @@ name each sub-folder after a locale. Create one .properties file in each folder 
 
 To install in a project, run this command:
 
-    npm install @haven/localized-router --save
+    npm install localized-router --save
     
 Then put the code in your express router like this:
 
