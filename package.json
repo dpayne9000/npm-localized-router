@@ -1,6 +1,6 @@
 {
   "name": "localized-router",
-  "version": "0.1.7",
+  "version": "0.1.9",
   "description": "A module for parsing localization files into front end changes via the router",
   "main": "index.js",
   "scripts": {
